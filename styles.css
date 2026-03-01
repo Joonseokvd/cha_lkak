@@ -66,8 +66,7 @@ body {
   border-radius: 0;
   filter: blur(0);
   opacity: 0;
-  transform: scale(1);
-  transition: transform 420ms cubic-bezier(0.22, 0.61, 0.36, 1), opacity 420ms ease, filter 420ms ease;
+  transition: opacity 420ms ease, filter 420ms ease;
 }
 
 .media img.is-loaded {
@@ -75,13 +74,11 @@ body {
 }
 
 .slide.is-leaving .media img {
-  transform: scale(0.8);
   filter: blur(10px);
   opacity: 0.5;
 }
 
 .slide.is-active .media img {
-  transform: scale(1);
   filter: blur(0);
   opacity: 1;
 }
@@ -99,8 +96,7 @@ body {
   color: var(--text-main);
   filter: blur(0);
   opacity: 1;
-  transform: scale(1);
-  transition: transform 420ms cubic-bezier(0.22, 0.61, 0.36, 1), opacity 420ms ease, filter 420ms ease;
+  transition: opacity 420ms ease, filter 420ms ease;
 }
 
 .caption .year {
@@ -108,13 +104,11 @@ body {
 }
 
 .slide.is-leaving .caption {
-  transform: scale(0.8);
   filter: blur(10px);
   opacity: 0.5;
 }
 
 .slide.is-active .caption {
-  transform: scale(1);
   filter: blur(0);
   opacity: 1;
 }
